@@ -1,0 +1,5 @@
+cvi-pinmux-cv181x (1.0.0-1) sid; urgency=medium
+
+  * Initial release.
+
+ -- Justin Hammond <justin@dynam.ac>  Sun, 07 Apr 2024 06:54:44 +0000

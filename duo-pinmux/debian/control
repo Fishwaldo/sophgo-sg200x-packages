@@ -1,0 +1,18 @@
+Source: duo-pinmux
+Section: admin
+Priority: optional
+Maintainer: Justin Hammond <justin@dynam.ac>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/milkv-duo/milkv-duo-pinmux
+
+Package: duo-pinmux
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ libc6
+Conflicts: cvi-pinmux-cv180x
+Description: Pinmux Control for MilkV Duo256 board
+ Pinmux Control for MilkV Duo256 to adjust pin functions

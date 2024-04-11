@@ -1,0 +1,17 @@
+Source: cvi-pinmux-cv181x
+Section: admin
+Priority: optional
+Maintainer: Justin Hammond <justin@dynam.ac>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13), libc6
+Standards-Version: 4.6.2
+Homepage: https://github.com/sophgo/ramdisk/tree/sg200x-dev/tools/cvi_pinmux
+
+Package: cvi-pinmux-cv181x
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Conflicts: cvi-pinmux-cv180x
+Description: Pinmux Control for CVITEK cv181x chips
+ Pinmux Control for CVITEK cv181x chips to adjust pin functions

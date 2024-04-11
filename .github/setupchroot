@@ -1,0 +1,9 @@
+dpkg --add-architecture riscv64
+sh -c "cat >/etc/ld.so.conf.d/riscv64-linux-gnu.conf <<EOF
+/usr/local/lib/riscv64-linux-gnu
+/lib/riscv64-linux-gnu
+/usr/lib/riscv64-linux-gnu
+/usr/riscv64-linux-gnu/lib/
+EOF
+"
+ln -s /usr/riscv64-linux-gnu/lib/ld-linux-riscv64-lp64d.so.1 /lib

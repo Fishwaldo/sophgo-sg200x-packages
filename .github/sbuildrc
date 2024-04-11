@@ -1,0 +1,3 @@
+$crossbuild_core_depends = {
+riscv64 => ['gcc-riscv64-linux-gnu:native', 'g++-riscv64-linux-gnu:native', 'dpkg-cross:native'],              
+};

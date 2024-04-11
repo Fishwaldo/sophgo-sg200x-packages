@@ -16,7 +16,7 @@ jobs:
       matrix:
         packages: [cvi-pinmux-cv181x, duo-pinmux]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: install packages
       run: |
         sudo apt install -y sbuild schroot dh-make fakeroot
